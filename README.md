@@ -41,7 +41,7 @@ AIStopwords forSpanish.
 To change the default stopword class for a language:
 
 ```smalltalk
-AIStopwords defaultEnglishStopwordClass: aClass.
+AIStopwordsEnglish defaultStopwordClass: aClass.
 ```
 
 Stopwords list were collected from https://github.com/igorbrigadir/stopwords
