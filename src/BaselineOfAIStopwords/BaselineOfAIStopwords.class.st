@@ -11,10 +11,10 @@ BaselineOfAIStopwords >> baseline: spec [
 		for: #(common)
 		do: [ 
 			spec 
-				package: 'AIStopwords';
-				package: 'AIStopwords-Tests'	with: [ spec requires: #(AIStopwords) ].
+				package: 'AI-Stopwords';
+				package: 'AI-Stopwords-Tests'	with: [ spec requires: #(AI-Stopwords) ].
 			spec 
-				group: 'Core' 						with: #('AIStopwords');
-				group: 'Tests' 						with: #('AIStopwords' 'AIStopwords-Tests');
+				group: 'Core' 						with: #('AI-Stopwords');
+				group: 'Tests' 						with: #('AI-Stopwords' 'AI-Stopwords-Tests');
 				group: 'default' 					with: #('Core' 'Tests') ]
 ]
