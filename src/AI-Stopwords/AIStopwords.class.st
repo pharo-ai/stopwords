@@ -1,19 +1,28 @@
 "
-Abstract class façade to quickly obtain a stop word Collection. It supports multiple stopwords repositories (implemented as subclasses).
+''AI Stopwords'' are a group of objects to get stop word lists. 
+
+This abstract class façade to quickly obtain a stop word Collection. It supports multiple stopwords repositories (implemented as subclasses).
+
+## Public API and Key Messages
 
 Users could get a list of stop words following the pattern 
 
+```language=Pharo&caption=Pattern usage&label=code1
 AIStopwords for<Language>.
+```
 
 for example
 
+```language=Pharo&caption=Usage on two different languages&label=code2
 AIStopwords forEnglish.
 AIStopwords forSpanish.
+```
 
 To change the default stopword class for a language:
 
-AIStopwords defaultEnglishStopWordClass: aClass.
-
+```language=Pharo&caption=Change default stopword list&label=code3
+AIStopwords defaultEnglishStopwordClass: aClass.
+```
 
 Stopwords list collected from https://github.com/igorbrigadir/stopwords
 

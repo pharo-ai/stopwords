@@ -8,13 +8,13 @@ Class {
 }
 
 { #category : #accessing }
-AIStopwordsEnglish class >> defaultStopWordClass [
+AIStopwordsEnglish class >> defaultStopwordClass [
 	^ DefaultStopWordClass
 		ifNil: [ DefaultStopWordClass := AIStopwordsEngSMART ]
 ]
 
 { #category : #accessing }
-AIStopwordsEnglish class >> defaultStopWordClass: anObject [
+AIStopwordsEnglish class >> defaultStopwordClass: anObject [
 
 	^ DefaultStopWordClass := anObject
 ]
