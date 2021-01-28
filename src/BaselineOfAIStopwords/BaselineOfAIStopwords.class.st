@@ -12,7 +12,7 @@ BaselineOfAIStopwords >> baseline: spec [
 		do: [ 
 			spec 
 				package: 'AI-Stopwords';
-				package: 'AI-Stopwords-Tests'	with: [ spec requires: #(AI-Stopwords) ].
+				package: 'AI-Stopwords-Tests'	with: [ spec requires: #('AI-Stopwords') ].
 			spec 
 				group: 'Core' 						with: #('AI-Stopwords');
 				group: 'Tests' 						with: #('AI-Stopwords' 'AI-Stopwords-Tests');
