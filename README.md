@@ -25,4 +25,24 @@ If you are new to baselines and Metacello, check out the [Baselines](https://git
 
 ## How to use it?
 
-WiP
+You can use the class façade to quickly obtain a stop word Collection. It supports multiple stopwords repositories (implemented as subclasses), but a default list is automatically configured. Users could get a list of stop words for a language, you can use the pattern:
+
+```smalltalk
+AIStopwords for<Language>.
+```
+
+for example:
+
+```smalltalk
+AIStopwords forEnglish.
+AIStopwords forSpanish.
+```
+
+To change the default stopword class for a language:
+
+```smalltalk
+AIStopwordsEnglish defaultStopwordClass: aClass.
+```
+
+Stopwords list were collected from https://github.com/igorbrigadir/stopwords
+
