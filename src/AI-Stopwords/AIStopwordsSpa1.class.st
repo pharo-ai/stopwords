@@ -1,3 +1,6 @@
+"
+Please see superclass comment.
+"
 Class {
 	#name : #AIStopwordsSpa1,
 	#superclass : #AIStopwordsSpanish,
@@ -9,7 +12,7 @@ AIStopwordsSpa1 class >> dataSource [
 	" See superimplementor's comment "
 
 	^ { 
-		'SMART' .
+		'UnnamedES1' .
 		'https://github.com/ddhira123/Stop-Words-List/raw/main/list/spanish.txt' .
 		351 .
 		''

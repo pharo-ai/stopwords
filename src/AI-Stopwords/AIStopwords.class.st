@@ -64,6 +64,13 @@ AIStopwords class >> forEnglish [
 ]
 
 { #category : #'instance creation' }
+AIStopwords class >> forFrench [
+	" Answer a <Collection> of <String> each one representing a stop word for a language "
+	
+	^ AIStopwordsFrench defaultStopwordClass contents
+]
+
+{ #category : #'instance creation' }
 AIStopwords class >> forSpanish [
 	" Answer a <Collection> of <String> each one representing a stop word for a language "
 	

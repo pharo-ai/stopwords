@@ -1,3 +1,6 @@
+"
+Please see superclass comment.
+"
 Class {
 	#name : #AIStopwordsSpanish,
 	#superclass : #AIStopwords,
