@@ -36,6 +36,7 @@ for example:
 ```smalltalk
 AIStopwords forEnglish.
 AIStopwords forSpanish.
+AIStopwords forFrench.
 ```
 
 To change the default stopword class for a language:
