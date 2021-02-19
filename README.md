@@ -6,7 +6,7 @@ Load the stopwords that you need in Pharo
 
 ```smalltalk
 Metacello new
-  baseline: 'AIStopword';
+  baseline: 'AIStopwords';
   repository: 'github://pharo-ai/stopwords/src';
   load.
 ```
@@ -17,7 +17,7 @@ If you want to add a dependency on stopwords to your project, include the follow
 
 ```Smalltalk
 spec
-  baseline: 'AIStopword'
+  baseline: 'AIStopwords'
   with: [ spec repository: 'github://pharo-ai/stopwords/src' ].
 ```
 
