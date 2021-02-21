@@ -18,3 +18,10 @@ AIStopwordsEnglish class >> defaultStopwordClass: anObject [
 
 	^ DefaultStopWordClass := anObject
 ]
+
+{ #category : #accessing }
+AIStopwordsEnglish >> contents [ 
+	" Answer a <String> with receiver's stop words "
+	
+	self subclassResponsibility
+]

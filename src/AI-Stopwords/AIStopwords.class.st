@@ -76,10 +76,3 @@ AIStopwords class >> forSpanish [
 	
 	^ AIStopwordsSpanish defaultStopwordClass contents
 ]
-
-{ #category : #accessing }
-AIStopwords >> contents [ 
-	" Answer a <String> with receiver's stop words "
-	
-	self subclassResponsibility
-]

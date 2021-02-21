@@ -9,3 +9,22 @@ Class {
 	],
 	#category : #'AI-Stopwords'
 }
+
+{ #category : #accessing }
+AIStopwordsFrench class >> defaultStopwordClass [
+
+	^ DefaultStopWordClass
+		ifNil: [ DefaultStopWordClass := AIStopwordsFr1 ]
+]
+
+{ #category : #accessing }
+AIStopwordsFrench class >> defaultStopwordClass: anObject [
+	DefaultStopWordClass := anObject
+]
+
+{ #category : #accessing }
+AIStopwordsFrench >> contents [ 
+	" Answer a <String> with receiver's stop words "
+	
+	self subclassResponsibility
+]

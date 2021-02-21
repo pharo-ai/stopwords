@@ -20,3 +20,10 @@ AIStopwordsSpanish class >> defaultStopwordClass [
 AIStopwordsSpanish class >> defaultStopwordClass: anObject [
 	DefaultStopWordClass := anObject
 ]
+
+{ #category : #accessing }
+AIStopwordsSpanish >> contents [ 
+	" Answer a <String> with receiver's stop words "
+	
+	self subclassResponsibility
+]
