@@ -25,6 +25,8 @@ If you are new to baselines and Metacello, check out the [Baselines](https://git
 
 ## How to use it?
 
+### Explore available stopwords 
+
 You can use the class façade to quickly obtain a stop word Collection. It supports multiple stopwords repositories (implemented as subclasses), but a default list is automatically configured. Users could get a list of stop words for a language, you can use the pattern:
 
 ```smalltalk
@@ -47,3 +49,16 @@ AIStopwordsEnglish defaultStopwordClass: aClass.
 
 Stopwords list were collected from https://github.com/igorbrigadir/stopwords
 
+### Check for stopwords
+
+Example of usage:
+
+```smalltalk
+'This is Ground Control to Major Tom' removeStopwordsUsing: AIStopwords forEnglish
+```
+
+will answer a Collection without the stopwords:
+
+```smalltalk
+#('Ground' 'Control' 'Major' 'Tom')
+```
