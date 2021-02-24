@@ -62,3 +62,13 @@ will answer a Collection without the stopwords:
 ```smalltalk
 #('Ground' 'Control' 'Major' 'Tom')
 ```
+
+### Add your stopwords to a list
+
+Stopwords now can be augmented with #addStopword: and #addStopwords:
+
+```smalltalk
+AIStopwordsEngCoreNLP new addStopword: 'myStopword'.
+AIStopwordsEngLuceneSolr new addStopwords: #('stopword1' 'stopword2').
+```
+
