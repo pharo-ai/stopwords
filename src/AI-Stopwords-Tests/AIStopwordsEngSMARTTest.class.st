@@ -15,12 +15,6 @@ AIStopwordsEngSMARTTest >> setUp [
 ]
 
 { #category : #test }
-AIStopwordsEngSMARTTest >> testContents [
-
-	self deny: self stopwords contents isEmpty.
-]
-
-{ #category : #test }
 AIStopwordsEngSMARTTest >> testDataSource [
 
 	| ds |
@@ -31,4 +25,11 @@ AIStopwordsEngSMARTTest >> testDataSource [
 	self assert: (ds second isKindOf: String).
 	self assert: (ds third isKindOf: Number).
 	self assert: (ds fourth isKindOf: String)
+]
+
+{ #category : #test }
+AIStopwordsEngSMARTTest >> testStopwordsList [
+
+	self deny: self stopwords stopwordsList isEmpty.
+	self assert: (self stopwords stopwordsList isKindOf: String)
 ]

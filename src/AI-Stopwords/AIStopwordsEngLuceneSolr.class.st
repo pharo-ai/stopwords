@@ -20,7 +20,7 @@ AIStopwordsEngLuceneSolr class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngLuceneSolr >> contents [ 
+AIStopwordsEngLuceneSolr >> stopwordsList [ 
 	" See superimplementor's comment "
 
 	^ 'a

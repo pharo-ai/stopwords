@@ -21,7 +21,7 @@ AIStopwordsEngOvid class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngOvid >> contents [ 
+AIStopwordsEngOvid >> stopwordsList [ 
 	" See superimplementor's comment "
 
 	^ 'about

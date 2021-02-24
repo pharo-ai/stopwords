@@ -23,7 +23,7 @@ AIStopwordsFrench class >> defaultStopwordClass: anObject [
 ]
 
 { #category : #accessing }
-AIStopwordsFrench >> contents [ 
+AIStopwordsFrench >> stopwordsList [ 
 	" Answer a <String> with receiver's stop words "
 	
 	self subclassResponsibility

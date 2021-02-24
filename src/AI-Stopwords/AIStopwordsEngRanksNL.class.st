@@ -17,7 +17,7 @@ AIStopwordsEngRanksNL class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngRanksNL >> contents [
+AIStopwordsEngRanksNL >> stopwordsList [
 	" See superimplementor's comment "
 
 	^ '''ll

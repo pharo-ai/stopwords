@@ -20,7 +20,7 @@ AIStopwordsSpa1 class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsSpa1 >> contents [ 
+AIStopwordsSpa1 >> stopwordsList [ 
 	" See superimplementor's comment "
 
 	^ 'a

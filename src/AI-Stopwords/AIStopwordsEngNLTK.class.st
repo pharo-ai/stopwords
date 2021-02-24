@@ -17,7 +17,7 @@ AIStopwordsEngNLTK class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngNLTK >> contents [
+AIStopwordsEngNLTK >> stopwordsList [
 
 	^ 'i
 me

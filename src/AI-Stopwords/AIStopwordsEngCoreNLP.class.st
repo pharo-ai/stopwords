@@ -24,7 +24,7 @@ AIStopwordsEngCoreNLP class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngCoreNLP >> contents [
+AIStopwordsEngCoreNLP >> stopwordsList [
 	" See superimplementor's comment "
 	
 	^ '!!

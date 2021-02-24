@@ -30,18 +30,11 @@ Stopwords list collected from https://github.com/igorbrigadir/stopwords
 Class {
 	#name : #AIStopwords,
 	#superclass : #Object,
+	#instVars : [
+		'stopwords'
+	],
 	#category : #'AI-Stopwords'
 }
-
-{ #category : #accessing }
-AIStopwords class >> contents [
-	" Private - See comments in #for<Language> "
-	
-	| stopwordInstance |
-	
-	stopwordInstance := self new.
-	^ stopwordInstance contents lines
-]
 
 { #category : #accessing }
 AIStopwords class >> dataSource [
@@ -60,19 +53,75 @@ AIStopwords class >> dataSource [
 AIStopwords class >> forEnglish [
 	" Answer a <Collection> of <String> each one representing a stop word for a language "
 	
-	^ AIStopwordsEnglish defaultStopwordClass contents
+	^ AIStopwordsEnglish defaultStopwordClass stopwordsList
 ]
 
 { #category : #'instance creation' }
 AIStopwords class >> forFrench [
 	" Answer a <Collection> of <String> each one representing a stop word for a language "
 	
-	^ AIStopwordsFrench defaultStopwordClass contents
+	^ AIStopwordsFrench defaultStopwordClass stopwordsList
 ]
 
 { #category : #'instance creation' }
 AIStopwords class >> forSpanish [
 	" Answer a <Collection> of <String> each one representing a stop word for a language "
 	
-	^ AIStopwordsSpanish defaultStopwordClass contents
+	^ AIStopwordsSpanish defaultStopwordClass stopwordsList
+]
+
+{ #category : #accessing }
+AIStopwords class >> stopwordsList [
+	" Private - See comments in #for<Language> "
+	
+	| stopwordInstance |
+	
+	stopwordInstance := self new.
+	^ stopwordInstance stopwordsList lines
+]
+
+{ #category : #accessing }
+AIStopwords >> addStopword: aString [
+	" Augment the receiver's stopwords with aString "
+	
+	^ self stopwords add: aString
+]
+
+{ #category : #accessing }
+AIStopwords >> addStopwords: aCollection [
+	" Augment the receiver's stopwords with aCollection "
+	
+	self stopwords addAll: aCollection
+]
+
+{ #category : #accessing }
+AIStopwords >> buildStopwords [
+	" Private - Set the receiver's internal representation "
+
+	| wordsCollection |
+	
+	wordsCollection := self stopwordsList lines.
+	^ wordsCollection asOrderedCollection.
+]
+
+{ #category : #accessing }
+AIStopwords >> stopwords [
+	" Answer a <Collection> of <String> each one representing a stopword "
+
+	^ stopwords
+		ifNil: [ stopwords := self buildStopwords ]
+]
+
+{ #category : #accessing }
+AIStopwords >> stopwords: aCollection [
+	" Set the receiver's stopwords to be aCollection of <String> "
+
+	stopwords := aCollection
+]
+
+{ #category : #accessing }
+AIStopwords >> stopwordsList [
+
+	self subclassResponsibility
+
 ]

@@ -20,7 +20,7 @@ AIStopwordsEngMySQLInnoDB class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngMySQLInnoDB >> contents [ 
+AIStopwordsEngMySQLInnoDB >> stopwordsList [ 
 	" See superimplementor's comment "
 
 	^ 'a

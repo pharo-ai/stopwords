@@ -17,7 +17,7 @@ AIStopwordsEngLingPipe class >> dataSource [
 ]
 
 { #category : #accessing }
-AIStopwordsEngLingPipe >> contents [
+AIStopwordsEngLingPipe >> stopwordsList [
 	" See superimplementor's comment "
 
 	^ 'a

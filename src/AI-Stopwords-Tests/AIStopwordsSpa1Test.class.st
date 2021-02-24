@@ -15,7 +15,8 @@ AIStopwordsSpa1Test >> setUp [
 ]
 
 { #category : #test }
-AIStopwordsSpa1Test >> testContents [
+AIStopwordsSpa1Test >> testStopwordsList [
 
-	self deny: self stopwords contents isEmpty.
+	self deny: self stopwords stopwordsList isEmpty.
+	self assert: (self stopwords stopwordsList isKindOf: String)
 ]
